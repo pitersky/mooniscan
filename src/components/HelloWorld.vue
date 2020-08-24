@@ -70,6 +70,9 @@
         </tbody>
       </table>
     </div>
+    <div>
+      <a href="https://github.com/Mooniscan/mooniscan">Github</a> | <a href="https://twitter.com/OgurchickYura">Twitter</a>
+    </div>
   </div>
 </template>
 
