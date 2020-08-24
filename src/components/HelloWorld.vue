@@ -85,8 +85,8 @@ export default {
       reserveUSD_gte: 10000,
       days: 3,
       pairs: [],
-      sortColumn: 'createdAtTimestamp',
-      sortDir: 'desc'
+      sortColumn: 'days',
+      sortDir: 'asc'
     }
   },
   mounted() {
@@ -105,9 +105,22 @@ export default {
 
       return sortedPairs.sort((a, b) => {
         if (this.sortDir === 'asc') {
-          return Number(a[this.sortColumn]) > Number(b[this.sortColumn])
+          if (Number(a[this.sortColumn]) < Number(b[this.sortColumn])) {
+            return -1
+          }
+          if (Number(a[this.sortColumn]) > Number(b[this.sortColumn])) {
+            return 1
+          }
+          return 0
+        } else {
+          if (Number(b[this.sortColumn]) < Number(a[this.sortColumn])) {
+            return -1
+          }
+          if (Number(b[this.sortColumn]) > Number(a[this.sortColumn])) {
+            return 1
+          }
+          return 0
         }
-        return Number(a[this.sortColumn]) < Number(b[this.sortColumn])
       })
     }
   },
