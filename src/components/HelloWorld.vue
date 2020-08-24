@@ -11,24 +11,24 @@
         </div>
 
         <div class="mb-2">
-          <label class="whitespace-no-wrap inline-block text-gray-700 text-sm font-bold mb-2 w-1/4 text-right pr-4" for="username">
+          <label class="whitespace-no-wrap inline-block text-gray-700 text-sm font-bold mb-2 w-1/4 text-right pr-4" for="tx_count">
             Tx count >=
           </label>
-          <input type="number" class="whitespace-no-wrap bg-darkest appearance-none border rounded-lg w-3/4 py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline border-gray-700" id="username" placeholder="Tx count" v-model="txCount_gte">
+          <input type="number" class="whitespace-no-wrap bg-darkest appearance-none border rounded-lg w-3/4 py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline border-gray-700" id="tx_count" placeholder="Tx count" v-model="txCount_gte">
         </div>
 
         <div class="mb-2">
-          <label class="whitespace-no-wrap inline-block text-gray-700 text-sm font-bold mb-2 w-1/4 text-right pr-4" for="username">
+          <label class="whitespace-no-wrap inline-block text-gray-700 text-sm font-bold mb-2 w-1/4 text-right pr-4" for="reserve">
             Reserve >=
           </label>
-          <input class="bg-darkest appearance-none border rounded-lg w-3/4 py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline border-gray-700" id="username" type="number" placeholder="Reserve" v-model="reserveUSD_gte">
+          <input class="bg-darkest appearance-none border rounded-lg w-3/4 py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline border-gray-700" id="reserve" type="number" placeholder="Reserve" v-model="reserveUSD_gte">
         </div>
 
         <div class="mb-2">
-          <label class="inline-block text-gray-700 text-sm font-bold mb-2 w-1/4 text-right pr-4" for="username">
+          <label class="inline-block text-gray-700 text-sm font-bold mb-2 w-1/4 text-right pr-4" for="days">
             Days &lt;
           </label>
-          <input class="bg-darkest appearance-none border rounded-lg w-3/4 py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline border-gray-700" id="username" type="number" placeholder="Days" v-model="days">
+          <input class="bg-darkest appearance-none border rounded-lg w-3/4 py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline border-gray-700" id="days" type="number" placeholder="Days" v-model="days">
         </div>
 
       </div>
