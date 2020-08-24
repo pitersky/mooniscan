@@ -86,7 +86,7 @@ export default {
       days: 3,
       pairs: [],
       sortColumn: 'createdAtTimestamp',
-      sortDir: 'asc'
+      sortDir: 'desc'
     }
   },
   mounted() {
